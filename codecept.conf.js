@@ -5,6 +5,10 @@ setHeadlessWhen(process.env.HEADLESS);
 exports.config = {
   tests: './todomvc-tests/**/*_test.js',
   output: './output',
+  
+   plugins: {
+        "allure": {},
+ },
   helpers: {
     Playwright: {
       url: 'http://localhost',
@@ -13,9 +17,7 @@ exports.config = {
     },
 
     REST: {},
- plugins: {
-        "allure": {},
- },
+
     CustomHelper: {
       require: './todomvc-tests/helpers/custom.helper.js'
     }
