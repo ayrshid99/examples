@@ -13,7 +13,9 @@ exports.config = {
     },
 
     REST: {},
-
+ plugins: {
+        "allure": {},
+ },
     CustomHelper: {
       require: './todomvc-tests/helpers/custom.helper.js'
     }
