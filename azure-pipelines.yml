@@ -19,3 +19,11 @@ steps:
     npm install
     npx codeceptjs run --steps
   displayName: 'npm install and Run Tests'
+  
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  inputs:
+    testResultsFiles: 'reports/*.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true
+  condition: succeededOrFailed()  
