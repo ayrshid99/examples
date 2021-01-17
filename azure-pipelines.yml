@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install
-    npx codeceptjs run --steps --plugins "allure"
+    npx codeceptjs run  --plugins "allure"
   displayName: 'npm install and Run Tests'
   
 - task: PublishTestResults@2
