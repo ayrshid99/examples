@@ -23,7 +23,7 @@ steps:
 - task: PublishTestResults@2
   displayName: 'Publish Test Results'
   inputs:
-    testResultsFiles: 'ouput/*.xml'
+    testResultsFiles: 'output/*.xml'
     mergeTestResults: true
     failTaskOnFailedTests: true
   condition: succeededOrFailed()  
