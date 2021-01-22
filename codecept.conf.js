@@ -30,6 +30,12 @@ exports.config = {
     ]
   },
 
+   "mocha": {
+    "reporterOptions": {
+        "reportDir": "output"
+    }
+  },
+  
   include: {
     TodosPage: './todomvc-tests/pages/todos.page.js'
   },
