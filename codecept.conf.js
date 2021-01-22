@@ -32,7 +32,7 @@ exports.config = {
 
    "mocha": {
     "reporterOptions": {
-        "reportDir": "output"
+        "reportDir": "./output"
     }
   },
   
