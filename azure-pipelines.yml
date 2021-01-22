@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install
-    npx codeceptjs run  --reporter mocha-junit-reporter
+    npx codeceptjs run --steps --reporter mocha-junit-reporter
   displayName: 'npm install and Run Tests'
   
 - task: PublishTestResults@2
