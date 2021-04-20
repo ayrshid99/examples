@@ -13,7 +13,7 @@ exports.config = {
     Playwright: {
       url: 'http://localhost',
       waitForTimeout: 5000,
-      show: true,
+      show: false,
     },
 
     REST: {},
