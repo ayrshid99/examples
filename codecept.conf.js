@@ -11,7 +11,7 @@ exports.config = {
  },
   helpers: {
     Playwright: {
-      url: 'http://localhost',
+      url: 'https://todomvc.com/examples/angularjs/#/',
       waitForTimeout: 5000,
       show: false,
     },
